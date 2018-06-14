@@ -1,0 +1,17 @@
+.navBar{
+  /*Removes Bullet Points from List Objects from navBar*/
+  list-style: none;
+  background-color: #292D38;
+
+}
+
+li{
+  display: inline-block;
+  margin-left: 70px;
+}
+
+nav a{
+  text-decoration: none;
+  color: white;
+  font-family: courier;
+}
