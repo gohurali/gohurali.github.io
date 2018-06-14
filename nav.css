@@ -2,16 +2,20 @@
   /*Removes Bullet Points from List Objects from navBar*/
   list-style: none;
   background-color: #292D38;
-
 }
 
+/*Attributes for the Line Objects*/
 li{
-  display: inline-block;
-  margin-left: 70px;
+  display: inline-block;  /*Makes the list horizontal*/
+  margin-left: 70px;      /*Defines the space between*/
 }
 
 nav a{
   text-decoration: none;
   color: white;
-  font-family: courier;
+  font-family: 'Karla';
+}
+
+nav a:hover{
+  color: green;
 }
