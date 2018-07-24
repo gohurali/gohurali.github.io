@@ -6,3 +6,6 @@ By creating this portfolio I'm learning CSS and JavaScript in order to create an
 
 Some fonts are being used from the Google Fonts API
 You can find them here: https://fonts.google.com/
+
+For JavaScript:
+https://www.w3schools.com/howto/howto_js_trigger_button_enter.asp
