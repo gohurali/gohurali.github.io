@@ -9,3 +9,5 @@ You can find them here: https://fonts.google.com/
 
 For JavaScript:
 https://www.w3schools.com/howto/howto_js_trigger_button_enter.asp
+
+For my GitHub Resume: http://resume.github.io/?gohurali
