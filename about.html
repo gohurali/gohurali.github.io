@@ -1,0 +1,111 @@
+<html>
+<!-- Header Area -->
+  <head>
+    <title>About Me</title>
+    <!-- Getting Fonts from Google Fonts API -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis:800">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla">
+
+    <!-- ===============================CSS========================== -->
+    <style>
+      body{background-color: #252730;}
+
+      /*Title Header*/
+      h1 {
+        font-family: 'Source Code Pro', monospace;
+        font-size: 500%;
+        color: white;
+      }
+
+      h2 {
+        font-family: 'Source Code Pro', monospace;
+        font-size: 200%;
+        color: white;
+      }
+
+      h3 {
+        font-family: 'Karla';
+        font-size: 150%;
+        color: white;
+        margin:50px;
+      }
+    </style>
+    <!-- ===============================CSS========================== -->
+
+      <!-- Linking External CSS File for Navigation Bar -->
+      <link href="nav.css" rel="stylesheet" type="text/css">
+
+      <!-- Creation of Top Navigation Bar -->
+      <nav>
+        <div class="navBar">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="Resume/AliGohur_Latest_Resume.pdf">Resume</a></li>
+        </div>
+      </nav>
+      <center> <h1>About Me</h1></center>
+  </head>
+
+  <script type="text/javascript" src="js_scripts/nodes.js"></script>
+    <script type="text/javascript">
+        var nodesjs = new NodesJs({
+            id: 'nodes',
+            width: window.innerWidth,
+            height: window.innerHeight,
+            particleSize: 2,
+            lineSize: 1,
+            particleColor: [255, 255, 255, 0.3],
+            lineColor: [255, 255, 255],
+            backgroundFrom: [10, 25, 100],
+            backgroundTo: [25, 50, 150],
+            backgroundDuration: 4000,
+            nobg: true,
+            number: window.hasOwnProperty('orientation') ? 30: 100,
+            speed: 20
+        });
+    </script>
+    <div style="z-index: -1; position: absolute; left: 0px; top: 0px; overflow: hidden; width: 100%; height: 100%;">
+          <canvas id="nodes"></canvas>
+    </div>
+
+
+  <body>
+
+    <style>
+      /*Attributes for the Line Objects*/
+      .bullets{
+        display: list-item;  /*Makes the list horizontal*/
+        margin-left: 250px;      /*Defines the space between - 70px*/
+        margin-right: 250px;
+        margin-top: 3px;
+        font-size: 20px;
+        font-family: 'Consolas';
+        color: white;
+      }
+    </style>
+
+    <center>
+    <h2 style="">Background</h2>
+    
+    <ul>
+      <li class="bullets">I'm a recent graduate from the University of Washington Bothell with a degree in Computer Science. 
+      I focused primarily in machine learning and computer vision.</li>
+      <br>
+      <li class="bullets">I've gained gained academic and industry experience ranging from cloud application development, 3D graphics development, machine learning, and computer vision.</li>
+      <br>
+      <li class="bullets">Through research, I've been able to also gain experience in natural language processing. I worked with Professors Dr. Arkady Retik & Dr. Diala Ezzeddine</li>
+      <br>
+    </ul> 
+    </center>
+
+    <center>
+        <p>
+          <a href = "https://www.github.com/gohurali"><img src="logos/github2.png" style="width:42px;height:42px;"></a> &nbsp
+          <a href = "https://www.linkedin.com/in/gohurali"><img src="logos/linkedin.png" style="width:42px;height:42px;"></a> &nbsp
+          <a href = "https://open.spotify.com/user/gohurali?si=04GxWVRTSnKCqItarp-pjQ"><img src="logos/spotify.png" style="width:42px;height:42px;"></a>
+        </p>
+      </center>
+    
+  </body>
+</html>

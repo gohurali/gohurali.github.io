@@ -52,11 +52,6 @@ working on.
       opacity: 0.4;
       color: ff006a;
     }
-
-
-
-
-
   </style>
   <!-- ===============================CSS========================== -->
 
@@ -67,11 +62,9 @@ working on.
     <nav>
       <div class="navBar">
         <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
         <li><a href="projects.html">Projects</a></li>
-        <li><a href="publications.html">Publications</a></li>
-        <li><a href="pastEnrollments.html">Coursework</a></li>
         <li><a href="Resume/AliGohur_Latest_Resume.pdf">Resume</a></li>
-        <li><a href="contact.html">Contact</a></li>
       </div>
     </nav>
 
@@ -100,6 +93,28 @@ working on.
         <canvas id="nodes"></canvas>
   </div>
 
+  <script>
+    $(document).ready(function(){
+    is_chrome = navigator.userAgent.indexOf('Chrome') > -1;
+    is_explorer = navigator.userAgent.indexOf('MSIE') > -1;
+    is_firefox = navigator.userAgent.indexOf('Firefox') > -1;
+    is_safari = navigator.userAgent.indexOf("Safari") > -1;
+    is_opera = navigator.userAgent.indexOf("Presto") > -1;
+    is_mac = (navigator.userAgent.indexOf('Mac OS') != -1);
+    is_windows = !is_mac;
+
+    if (is_chrome && is_safari){
+      is_safari=false;
+    }
+
+    if (is_safari || is_windows){
+      $('body').css('-webkit-text-stroke', '0.5px');
+    }
+
+
+    });
+  </script>
+
   <div class="main">
     <body>
       <h2>Synthetic Image Data Generation for Object Detection</h2>
@@ -111,9 +126,9 @@ working on.
         that generated 5000 images per day.
         From there we created a pipeline and trained a model in TensorFlow using a mix of real and synthetic data.
         <br><br>
-        <b>Languages:</b><span class="codeHighlight">python</span>
+        <b>Languages: </b><span class="codeHighlight">python</span>
         <br><br>
-        <b>Tools:</b><span class="codeHighlight">blender</span>,<span class="codeHighlight">numpy</span>,<span class="codeHighlight">TensorFlow</span>
+        <b>Tools: </b><span class="codeHighlight">blender</span>,<span class="codeHighlight">numpy</span>,<span class="codeHighlight">TensorFlow</span>
       </p>
 
       <br><br><br>
@@ -129,9 +144,9 @@ working on.
         For lane detection we used a hough transform with a ROI (Region of Interest) in mind along with extrapolation to the 
         farthest visible lane.
         <br><br>
-        <b>Languages:</b><span class="codeHighlight">C++</span>,<span class="codeHighlight">python</span>
+        <b>Languages: </b><span class="codeHighlight">C++</span>,<span class="codeHighlight">python</span>
         <br><br>
-        <b>Tools:</b> <span class="codeHighlight">opencv</span>,<span class="codeHighlight">jupyter</span>
+        <b>Tools: </b> <span class="codeHighlight">opencv</span>,<span class="codeHighlight">jupyter</span>
       </p>
 
       <br><br><br>
@@ -147,15 +162,19 @@ working on.
         and a LSTM (Long Short Term Memory) neural network. Along with our predicting model, we developed an android application to receive predictions
         from the cloud.
         <br><br>
-        <b>Languages:</b><span class="codeHighlight">python</span>
+        <b>Languages: </b><span class="codeHighlight">python</span>
         <br><br>
-        <b>Tools:</b> ,<span class="codeHighlight">PyTorch</span>,<span class="codeHighlight">jupyter</span>,<span class="codeHighlight">numpy</span>
+        <b>Tools: </b><span class="codeHighlight">PyTorch</span>,<span class="codeHighlight">jupyter</span>,<span class="codeHighlight">numpy</span>
       </p>
       
-
-
-      
     </body>
-
+    <br><br><br><br><br><br>
   </div>
+  <center>
+        <p>
+          <a href = "https://www.github.com/gohurali"><img src="logos/github2.png" style="width:42px;height:42px;"></a> &nbsp
+          <a href = "https://www.linkedin.com/in/gohurali"><img src="logos/linkedin.png" style="width:42px;height:42px;"></a> &nbsp
+          <a href = "https://open.spotify.com/user/gohurali?si=04GxWVRTSnKCqItarp-pjQ"><img src="logos/spotify.png" style="width:42px;height:42px;"></a>
+        </p>
+  </center>
 </html>
