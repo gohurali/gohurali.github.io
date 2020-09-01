@@ -38,11 +38,10 @@ working on.
 
     p {
       font-family : 'consolas';
-      margin-right : 300px;
     }
 
 
-    span{
+    .codeHighlight{
       background: #ffadde;
       border-top-left-radius: 7px;
       border-bottom-left-radius: 7px;
@@ -53,6 +52,10 @@ working on.
       opacity: 0.4;
       color: ff006a;
     }
+
+
+
+
 
   </style>
   <!-- ===============================CSS========================== -->
@@ -101,14 +104,16 @@ working on.
     <body>
       <h2>Synthetic Image Data Generation for Object Detection</h2>
       <img src="Photos/image2.png" style="width:300px;height:250px; float: left; margin-right:50px;">
-      <p style="font-family: 'consolas'; font-size:20px;">
+      <p style="font-family: 'consolas'; font-size:20px; margin-right : 300px;">
         <br>
         Realistic data for object detection for particular objects are scarce and hard to find. 
         To solve this issue, I developed an automated synthetic image data generator using Python & Blender 
         that generated 5000 images per day.
         From there we created a pipeline and trained a model in TensorFlow using a mix of real and synthetic data.
         <br><br>
-        <b>Tools:</b> <span>python</span>,<span>blender</span>,<span>numpy</span>,<span>TensorFlow</span>
+        <b>Languages:</b><span class="codeHighlight">python</span>
+        <br><br>
+        <b>Tools:</b><span class="codeHighlight">blender</span>,<span class="codeHighlight">numpy</span>,<span class="codeHighlight">TensorFlow</span>
       </p>
 
       <br><br><br>
@@ -117,14 +122,34 @@ working on.
       <h2 style="margin-right: 200px;">Lane & Vehicle Detection</h2>
       </center>
       <img src="Photos/ld_vd_1.gif" style="width:400px;height:250px; float: right; margin-left:50px; margin-right:100px; margin-bottom:50px;">
-      <p style="font-family: 'consolas'; font-size:20px;">
+      <p style="font-family: 'consolas'; font-size:20px; margin-right : 300px;">
         Object detection is a common application within the field of computer vision and there are many ways of implementing
         it. For this project, a support vector machine was trained on thousands of HOG representations of various vehicles and
         and a sliding window approach for the bounding box detections. 
         For lane detection we used a hough transform with a ROI (Region of Interest) in mind along with extrapolation to the 
         farthest visible lane.
         <br><br>
-        <b>Tools:</b> <span>C++</span>,<span>opencv</span>,<span>jupyter</span>
+        <b>Languages:</b><span class="codeHighlight">C++</span>,<span class="codeHighlight">python</span>
+        <br><br>
+        <b>Tools:</b> <span class="codeHighlight">opencv</span>,<span class="codeHighlight">jupyter</span>
+      </p>
+
+      <br><br><br>
+
+      <center>
+      <h2 style="margin-right: 240px;">Financial Market Prediction</h2>
+      </center>
+      <img src="Photos/BTC_inference.png" style="width:500px;height:450; float: left; margin-right:50px;">
+      <p style="font-family: 'consolas'; font-size:20px; margin-right : 150px;">
+        Machine learning is increasingly becoming popular within the financial trading markets. We tackled a novel approach
+        using historical BitCoin data to predict prices and inference price by day. We utilized various financial market indicators
+        to help with the feature engineering. We built multiple deep learning models such a 1 dimensional convolutional neural network (CNN)
+        and a LSTM (Long Short Term Memory) neural network. Along with our predicting model, we developed an android application to receive predictions
+        from the cloud.
+        <br><br>
+        <b>Languages:</b><span class="codeHighlight">python</span>
+        <br><br>
+        <b>Tools:</b> ,<span class="codeHighlight">PyTorch</span>,<span class="codeHighlight">jupyter</span>,<span class="codeHighlight">numpy</span>
       </p>
       
 
