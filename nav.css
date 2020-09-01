@@ -3,25 +3,50 @@ body{margin:0;}
 .navBar{
   /*Removes Bullet Points from List Objects from navBar*/
   list-style: none;
-  background-color: #292D38;
-  padding-bottom: 30px;
-  padding-top: 30px;
+  /*background-color: #292D38;*/
+  padding-bottom:30px;
+  padding-top: 0px;
   text-align: center;
+}
+
+.sideNav{
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  /*background-color: #292D38;*/
+  overflow-x: hidden;
+  padding-top: 300px;
 }
 
 /*Attributes for the Line Objects*/
 li{
   display: inline-block;  /*Makes the list horizontal*/
-  margin-left: 70px;      /*Defines the space between - 70px*/
-
+  margin-left: 10px;      /*Defines the space between - 70px*/
+  margin-right: 10px;
+  margin-top: 30px;
 }
 
 nav a{
   text-decoration: none;
+  font-size: 20px;
   color: white;
   font-family: 'Karla';
+  padding: 0px 20px 0px 0px;
 }
 
 nav a:hover{
   color: green;
+}
+
+p{
+  color: white;
+  font-family: 'Karla';
+  font-size: 30px;
+}
+
+.main{
+  margin-left: 200px;
 }

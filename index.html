@@ -59,20 +59,55 @@ index.html is the main homepage of the website
           <li><a href="contact.html">Contact</a></li>
         </div>
       </nav>
-
-      <center> <h1>Gohur Ali</h1> </center>
+      <center>
+        <h1 style="margin-top:1px">Gohur Ali</h1> 
+      </center>
   </head>
 
 <!-- Body Area -->
-  <body>
-  <img src="Photos/grad.jpg" alt="grad speech photo" align="right" style="margin:50px;">
-    <h3 style="margin:50px;">
-      Welcome to my website!<br><br>
-      I'm a fourth year student at the Univeristy of Washington Bothell studying Computer Science and Software Engineering.
-      Formerly, I was a Machine Learning intern at AVA Retail.AI focusing on computer vision and machine/deep learning.<br><br>
-      I'm interested in artificial intelligence, deep learning, and machine learning. <br><br>
+<div class="main">
+  <script type="text/javascript" src="js_scripts/nodes.js"></script>
+  <script type="text/javascript">
+      var nodesjs = new NodesJs({
+          id: 'nodes',
+          width: window.innerWidth,
+          height: window.innerHeight,
+          particleSize: 2,
+          lineSize: 1,
+          particleColor: [255, 255, 255, 0.3],
+          lineColor: [255, 255, 255],
+          backgroundFrom: [10, 25, 100],
+          backgroundTo: [25, 50, 150],
+          backgroundDuration: 4000,
+          nobg: true,
+          number: window.hasOwnProperty('orientation') ? 30: 100,
+          speed: 20
+      });
+  </script>
+  <div style="z-index: -1; position: absolute; left: 0px; top: 0px; overflow: hidden; width: 100%; height: 100%;">
+        <canvas id="nodes"></canvas>
+  </div>
 
-      Check out my CS course history on the Coursework page!
-    </h3>
-  </body>
+  
+
+  
+  <div class="textArea">
+    <body  style="z-index: 100; position: static">
+      <!-- Photo -->
+      <center>
+      <img src="Photos/grad.jpg" alt="grad speech photo" style="margin-right:200px">
+      </center>
+
+      <center>
+        <p style="margin-right:200px">
+          <a href = "https://www.github.com/gohurali"><img src="logos/github2.png" style="width:42px;height:42px;"></a> &nbsp
+          <a href = "https://www.linkedin.com/in/gohurali"><img src="logos/linkedin.png" style="width:42px;height:42px;"></a> &nbsp
+          <a href = "https://open.spotify.com/user/gohurali?si=04GxWVRTSnKCqItarp-pjQ"><img src="logos/spotify.png" style="width:42px;height:42px;"></a>
+        </p>
+      </center>
+
+    </body>
+  </div>
+  
+  </div>
 </html>
