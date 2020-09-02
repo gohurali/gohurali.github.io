@@ -94,10 +94,11 @@ working on.
   </div>
 
   <script>
-    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
-      function myFunction() {
+    function myFunction() {
         document.getElementById("proj1").style.font = "italic bold 20px arial,serif";
-      }
+    }
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+      myFunction();
     }
   </script>
 
