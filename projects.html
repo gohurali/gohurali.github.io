@@ -95,7 +95,9 @@ working on.
 
   <script>
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
-      alert("hi");
+      function myFunction() {
+        document.getElementById("proj1").style.font = "italic bold 20px arial,serif";
+      }
     }
   </script>
 
@@ -103,7 +105,7 @@ working on.
     <body>
       <h2>Synthetic Image Data Generation for Object Detection</h2>
       <img src="Photos/image2.png" style="width:300px;height:250px; float: left; margin-right:50px;">
-      <p style="font-family: 'consolas'; font-size:20px; margin-right : 300px;">
+      <p id="proj1" style="font-family: 'consolas'; font-size:20px; margin-right : 300px;">
         <br>
         Realistic data for object detection for particular objects are scarce and hard to find. 
         To solve this issue, I developed an automated synthetic image data generator using Python & Blender 
