@@ -1,13 +1,12 @@
-# This is my Personal Website!
+# Personal Portfolio Website
 
-This website is a portfolio of my work during university and my projects along the way.
+This website is a portfolio of my work during university and my projects along the way and is always under construction.
 
-By creating this portfolio I'm learning CSS and JavaScript in order to create an interactive and unique website.
+Built with Angular 11, TypeScript, HTML/CSS
+
+Particles are from `ng-particles` which comes from `tsparticles`
 
 Some fonts are being used from the Google Fonts API
 You can find them here: https://fonts.google.com/
-
-For JavaScript:
-https://www.w3schools.com/howto/howto_js_trigger_button_enter.asp
 
 For my GitHub Resume: http://resume.github.io/?gohurali
