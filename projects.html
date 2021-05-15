@@ -1,0 +1,193 @@
+<!--
+Gohur Ali's GitHub Page is Currently Under Heavy Construction!
+projects.html will contain the projects that I have completed or am currently
+working on.
+-->
+<html>
+<script src="https://use.fontawesome.com/bacd8c55e7.js"></script>
+<!-- Header Area -->
+<head>
+  <title>Projects</title>
+  <!-- Getting Fonts from Google Fonts API -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis:800">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet">
+
+  <!-- ===============================CSS========================== -->
+  <style>
+    body{background-color: #252730;}
+
+    /*Title Header*/
+    h1 {
+      font-family: Dosis;
+      font-size: 500%;
+      color: white;
+    }
+
+    h2 {
+      font-family: 'Source Code Pro', monospace;
+      font-size: 200%;
+      color: white;
+      margin:50px;
+    }
+
+    h3 {
+      font-family: 'Karla';
+      font-size: 150%;
+      color: white;
+      margin:50px;
+    }
+
+    p {
+      font-family : 'consolas';
+    }
+
+
+    .codeHighlight{
+      background: #ffadde;
+      border-top-left-radius: 7px;
+      border-bottom-left-radius: 7px;
+      border-top-right-radius: 7px;
+      border-bottom-right-radius: 7px;
+      padding-left:3px;
+      padding-right:3px;
+      opacity: 0.4;
+      color: ff006a;
+    }
+  </style>
+  <!-- ===============================CSS========================== -->
+
+    <!-- Linking External CSS File for Navigation Bar -->
+    <link href="nav.css" rel="stylesheet" type="text/css">
+
+    <!-- Creation of Top Navigation Bar -->
+    <nav>
+      <div class="navBar">
+        <li><a id="nav9" href="index.html">Home</a></li>
+        <li><a id="nav10" href="about.html">About</a></li>
+        <li><a id="nav11" href="projects.html">Projects</a></li>
+        <li><a id="nav12" href="Resume/AliGohur_Latest_Resume.pdf">Resume</a></li>
+      </div>
+    </nav>
+
+    <center> <h1>Projects</h1></center>
+</head>
+
+<script type="text/javascript" src="js_scripts/nodes.js"></script>
+  <script type="text/javascript">
+      var nodesjs = new NodesJs({
+          id: 'nodes',
+          width: window.innerWidth,
+          height: window.innerHeight,
+          particleSize: 2,
+          lineSize: 1,
+          particleColor: [255, 255, 255, 0.3],
+          lineColor: [255, 255, 255],
+          backgroundFrom: [10, 25, 100],
+          backgroundTo: [25, 50, 150],
+          backgroundDuration: 4000,
+          nobg: true,
+          number: window.hasOwnProperty('orientation') ? 30: 100,
+          speed: 20
+      });
+  </script>
+  <div style="z-index: -1; position: absolute; left: 0px; top: 0px; overflow: hidden; width: 100%; height: 100%;">
+        <canvas id="nodes"></canvas>
+  </div>
+
+  <div class="main">
+    <body>
+      <h2>Synthetic Image Data Generation for Object Detection</h2>
+      <img src="Photos/image2.png" style="width:450px;height:400px; float: left; margin-right:50px;">
+      <p id="proj1" style="font-family: 'consolas'; font-size:20px; margin-right : 150px;">
+        <br>
+        Obtaining realistic image data with bounding box annotations for particular objects are scarce and hard to find for object detection.
+        Based on previous <a href="https://arxiv.org/abs/1708.01642">research</a>, we learned that we can expand our dataset and improve 
+        model performance. To solve our issue, I developed an automated synthetic image data generator using Python & Blender 
+        that generated 5000 images per day. With each image that was being output being unique, we were able to expand our dataset to train on 
+        specific items that we did not originally have in our dataset. From there we created a pipeline and trained a deep learning model based on 
+        <a href="https://arxiv.org/abs/1708.02002">RetinaNet</a> with <a href="http://vision.stanford.edu/documents/Fei-FeiFergusPerona2006.pdf">One-shot learning</a> 
+        in TensorFlow using a mix of real and synthetic data.
+        <br><br>
+        <b>Languages: </b><span class="codeHighlight">python</span>
+        <br><br>
+        
+        <b>Tools: </b>
+        <span class="codeHighlight">blender</span>,
+        <span class="codeHighlight">jupyter</span>,
+        <span class="codeHighlight">numpy</span>,
+        <span class="codeHighlight">opencv</span>,
+        <span class="codeHighlight">tensorflow</span>
+
+        
+      </p>
+
+      <br><br><br>
+      
+      <center>
+      <h2 style="margin-right: 200px;">Lane & Vehicle Detection</h2>
+      </center>
+      <img src="Photos/ld_vd_1.gif" style="width:400px;height:250px; float: right; margin-left:50px; margin-right:100px; margin-bottom:50px;">
+      <p id="proj2" style="font-family: 'consolas'; font-size:20px; margin-right : 300px;">
+        Object detection is a common application within the field of computer vision and there are many ways of implementing
+        it. For this project, a support vector machine was trained on thousands of HOG representations of various vehicles and
+        and a sliding window approach for the bounding box detections. 
+        For lane detection we used a hough transform with a ROI (Region of Interest) in mind along with extrapolation to the 
+        farthest visible lane.
+        <br><br>
+        <b>Languages: </b><span class="codeHighlight">C++</span>,<span class="codeHighlight">python</span>
+        <br><br>
+        <b>Tools: </b> <span class="codeHighlight">opencv</span>,<span class="codeHighlight">jupyter</span>
+      </p>
+
+      <br><br><br>
+
+      <center>
+      <h2 style="margin-right: 240px;">Financial Market Prediction</h2>
+      </center>
+      <img src="Photos/BTC_inference.png" style="width:500px;height:450; float: left; margin-right:50px;">
+      <p id="proj3" style="font-family: 'consolas'; font-size:20px; margin-right : 150px;">
+        Machine learning is increasingly becoming popular within the financial trading markets. We tackled a novel approach
+        using historical BitCoin data to predict prices and inference price by day. We utilized various financial market indicators
+        to help with the feature engineering. We built multiple deep learning models such a 1 dimensional convolutional neural network (CNN)
+        and a LSTM (Long Short Term Memory) neural network. Along with our predicting model, we developed an android application to receive predictions
+        from the cloud.
+        <br><br>
+        <b>Languages: </b><span class="codeHighlight">python</span>
+        <br><br>
+        <b>Tools: </b>
+        <span class="codeHighlight">pytorch</span>,
+        <span class="codeHighlight">pandas</span>,
+        <span class="codeHighlight">flask</span>,
+        <span class="codeHighlight">sklearn</span>,
+        <span class="codeHighlight">Kivy</span>
+      </p>
+      
+    </body>
+    <br><br><br><br><br><br>
+  </div>
+  <center>
+        <p>
+          <a href = "https://www.github.com/gohurali"><i class="fa fa-github" aria-hidden="true" style="font-size:49px;color: white;"></i></a> &nbsp <!--<img src="logos/github2.png" style="width:42px;height:42px;">-->
+          <a href = "https://www.linkedin.com/in/gohurali"><i class="fa fa-linkedin" style="font-size:49px; color:#0E76A8"></i></a> &nbsp <!--<img src="logos/linkedin2.png" style="width:42px;height:42px;">-->
+          <a href = "https://open.spotify.com/user/gohurali?si=04GxWVRTSnKCqItarp-pjQ"><i class="fa fa-spotify" style="font-size:49px; color:#1DB954"></i></a> <!--<img src="logos/spotify.png" style="width:42px;height:42px;">-->
+        </p>
+  </center>
+
+  <script>
+    function change_font_mobile() {
+        document.getElementById("proj1").style.font = "20px 'Source Code Pro',monospace";
+        document.getElementById("proj2").style.font = "20px 'Source Code Pro',monospace";
+        document.getElementById("proj3").style.font = "20px 'Source Code Pro',monospace";
+
+        document.getElementById("nav9").style.font = "20px 'Source Code Pro',monospace";
+        document.getElementById("nav10").style.font = "20px 'Source Code Pro',monospace";
+        document.getElementById("nav11").style.font = "20px 'Source Code Pro',monospace";
+        document.getElementById("nav12").style.font = "20px 'Source Code Pro',monospace";
+    }
+    
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+      change_font_mobile();
+    }
+  </script>
+</html>
