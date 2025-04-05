@@ -1,0 +1,37 @@
+.container {
+    height: 100%;
+    padding: 200px;
+}
+
+.intro-header {
+    font-size: large;
+}
+
+.content .p {
+    padding: 10px;
+}
+
+.contact-me > a {
+    margin: 15px;
+    font-size: 30px;
+}
+
+/* 📱 Mobile styles */
+@media (max-width: 800px) {
+    .container {
+        padding: 60px 15px;
+    }
+
+    .intro-header {
+        font-size: medium;
+    }
+
+    .content .p {
+        font-size: 1rem;
+    }
+
+    .contact-me > a {
+        font-size: 24px;
+        margin: 0 8px;
+    }
+}
